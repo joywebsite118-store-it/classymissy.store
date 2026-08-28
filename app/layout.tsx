@@ -1,5 +1,6 @@
 import "@/app/globals.css";
 
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { UserRound } from "lucide-react";
 import type { Metadata } from "next";
 import { cacheLife } from "next/cache";
@@ -250,6 +251,7 @@ export default async function RootLayout({
 						<ErrorOverlayRemover />
 					</>
 				)}
+				<SpeedInsights />
 			</body>
 		</html>
 	);
