@@ -245,6 +245,7 @@ export default async function RootLayout({
 					</Suspense>
 					<Toaster richColors position="top-center" />
 				</ThemeProvider>
+				<SpeedInsights />
 				{env === "development" && (
 					<>
 						<NavigationReporter />
