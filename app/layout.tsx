@@ -1,5 +1,6 @@
 import "@/app/globals.css";
 
+import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { UserRound } from "lucide-react";
 import type { Metadata } from "next";
@@ -245,6 +246,7 @@ export default async function RootLayout({
 					</Suspense>
 					<Toaster richColors position="top-center" />
 				</ThemeProvider>
+				<Analytics />
 				<SpeedInsights />
 				{env === "development" && (
 					<>
