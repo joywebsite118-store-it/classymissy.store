@@ -254,7 +254,6 @@ export default async function RootLayout({
 						<ErrorOverlayRemover />
 					</>
 				)}
-				<SpeedInsights />
 			</body>
 		</html>
 	);
